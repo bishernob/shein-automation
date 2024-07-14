@@ -1,0 +1,15 @@
+{
+  "name": "shein-automation",
+  "version": "1.0.0",
+  "description": "A project to automate adding items to the cart on Shein using Puppeteer and a custom admin portal.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^22.13.0"
+  }
+}
