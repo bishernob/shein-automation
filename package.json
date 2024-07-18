@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node src/server.js",
+    "verifysetup"  : "node scripts/verifySetup.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
