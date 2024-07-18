@@ -1,6 +1,21 @@
+
+
+function isValidSheinUrl(url) {
+    return url.includes('shein.co');
+}
+
+
 document.getElementById('fetchItemDetails').addEventListener('click', async function() {
     const itemUrl = document.getElementById('itemUrl').value;
+    
     try {
+
+        //check validation shein Url
+        if (!isValidSheinUrl(itemUrl)) {
+            alert('Please enter a valid Shein URL.');
+            return;
+        }
+
         const response = await fetch('/fetch-item-details', {
             method: 'POST',
             headers: {
@@ -31,6 +46,12 @@ document.getElementById('addItemForm').addEventListener('submit', async function
     const itemSize = document.getElementById('itemSize').value;
 
     try {
+
+        if (!isValidSheinUrl(itemUrl)) {
+            alert('Please enter a valid Shein URL.');
+            return;
+        }
+
         const response = await fetch('/add-to-cart', {
             method: 'POST',
             headers: {
