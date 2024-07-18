@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="https://media.licdn.com/dms/image/D4E0BAQFS6lBHos14qg/company-logo_200_200/0/1666600884295/simmaio_logo?e=1729123200&v=beta&t=TzcMhHq4ACKA2EHur6ajdSMB0xuU_O_O8NnUEXdDUTk" alt="Logo">
+        </div>
+        <div class="form-container">
+            <h1>Add Item to Cart</h1>
+            <form id="addItemForm" action="/add-to-cart" method="POST">
+                <label for="itemUrl">Item URL:</label>
+                <input type="text" id="itemUrl" name="itemUrl" required>
+                <label for="itemSize">Size:</label>
+                <input type="text" id="itemSize" name="itemSize" required>
+                <button type="button" id="fetchItemDetails" aria-placeholder="">Fetch Item Details</button>
+                <button type="submit">Add to Cart</button>
+                <div id="response"></div>
+            </form>
+            <div id="result"></div>
+        </div>
+    </div>
+    <script src="admin_panel.js"> </script>
+
+</body>
+</html>

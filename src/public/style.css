@@ -1,0 +1,80 @@
+body {
+    background-color: #ffc853;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    margin-bottom: 20px; /* Adjust spacing as needed */
+}
+
+.logo img {
+    max-width: 200px; /* Adjust size as needed */
+}
+
+.form-container {
+    background-color: white;
+    border: 2px solid rgb(36, 35, 91);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center; /* Center align the contents */
+}
+
+h1 {
+    margin-top: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input[type="text"], button {
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 22px); /* Adjust width to fit within the borders */
+}
+
+button[type="submit"] {
+    background-color: rgb(36, 35, 91);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+#fetchItemDetails {
+    background-color: rgb(36, 35, 91);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#fetchItemDetails:hover {
+    background-color: #555;
+}
+#result {
+    margin-top: 15px;
+    text-align: center;
+}
